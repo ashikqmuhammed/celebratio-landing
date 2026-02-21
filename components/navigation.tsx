@@ -43,7 +43,10 @@ export function Navigation() {
             <button className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-brand-purple-600 dark:hover:text-brand-purple-400 transition-colors font-medium">
               Sign In
             </button>
-            <button
+            <a
+              href="https://chat.whatsapp.com/LyD4IUi9SM7AvKdNWx17Bz"
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn(
                 "px-6 py-2.5 rounded-lg font-semibold",
                 "bg-gradient-to-r from-brand-purple-600 to-brand-pink-600",
@@ -51,10 +54,11 @@ export function Navigation() {
                 "hover:shadow-lg hover:shadow-brand-purple-500/25",
                 "transition-all duration-300",
                 "hover:scale-105 active:scale-95",
+                "inline-block",
               )}
             >
-              Start Free Trial
-            </button>
+              Join Waitlist
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -114,17 +118,20 @@ export function Navigation() {
                 <button className="w-full px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors font-medium">
                   Sign In
                 </button>
-                <button
+                <a
+                  href="https://chat.whatsapp.com/LyD4IUi9SM7AvKdNWx17Bz"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={cn(
-                    "w-full px-6 py-3 rounded-lg font-semibold",
+                    "block w-full px-6 py-3 rounded-lg font-semibold text-center",
                     "bg-gradient-to-r from-brand-purple-600 to-brand-pink-600",
                     "text-white",
                     "hover:shadow-lg hover:shadow-brand-purple-500/25",
                     "transition-all duration-300",
                   )}
                 >
-                  Start Free Trial
-                </button>
+                  Join Waitlist
+                </a>
               </div>
             </div>
           </motion.div>

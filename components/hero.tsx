@@ -89,7 +89,10 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
           >
-            <button
+            <a
+              href="https://chat.whatsapp.com/LyD4IUi9SM7AvKdNWx17Bz"
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn(
                 "group relative px-8 py-4 rounded-xl font-semibold text-base sm:text-lg",
                 "bg-gradient-to-r from-brand-purple-600 to-brand-pink-600",
@@ -98,11 +101,12 @@ export function Hero() {
                 "transition-all duration-300",
                 "hover:scale-105 active:scale-95",
                 "w-full sm:w-auto",
+                "inline-block text-center",
               )}
             >
-              <span className="relative z-10">Start Free Trial</span>
+              <span className="relative z-10">Join Waitlist</span>
               <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-brand-purple-700 to-brand-pink-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            </button>
+            </a>
 
             <button
               className={cn(

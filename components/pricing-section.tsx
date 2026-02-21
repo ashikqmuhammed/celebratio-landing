@@ -15,7 +15,7 @@ const plans = [
       "Email support",
       "Mobile app access",
     ],
-    cta: "Start Free Trial",
+    cta: "Join Waitlist",
     popular: false,
   },
   {
@@ -30,7 +30,7 @@ const plans = [
       "Custom domains",
       "Analytics & reports",
     ],
-    cta: "Start Free Trial",
+    cta: "Join Waitlist",
     popular: true,
   },
   {
@@ -130,18 +130,36 @@ export function PricingSection() {
                 </div>
 
                 {/* CTA Button */}
-                <button
-                  className={cn(
-                    "w-full px-6 py-4 rounded-xl font-semibold text-base md:text-lg mb-8",
-                    "transition-all duration-300",
-                    "hover:scale-105 active:scale-95",
-                    plan.popular
-                      ? "bg-gradient-to-r from-brand-purple-600 to-brand-pink-600 text-white shadow-lg shadow-brand-purple-500/25 hover:shadow-xl hover:shadow-brand-purple-500/40"
-                      : "bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700",
-                  )}
-                >
-                  {plan.cta}
-                </button>
+                {plan.cta === "Join Waitlist" ? (
+                  <a
+                    href="https://chat.whatsapp.com/LyD4IUi9SM7AvKdNWx17Bz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cn(
+                      "block w-full px-6 py-4 rounded-xl font-semibold text-base md:text-lg mb-8 text-center",
+                      "transition-all duration-300",
+                      "hover:scale-105 active:scale-95",
+                      plan.popular
+                        ? "bg-gradient-to-r from-brand-purple-600 to-brand-pink-600 text-white shadow-lg shadow-brand-purple-500/25 hover:shadow-xl hover:shadow-brand-purple-500/40"
+                        : "bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700",
+                    )}
+                  >
+                    {plan.cta}
+                  </a>
+                ) : (
+                  <button
+                    className={cn(
+                      "w-full px-6 py-4 rounded-xl font-semibold text-base md:text-lg mb-8",
+                      "transition-all duration-300",
+                      "hover:scale-105 active:scale-95",
+                      plan.popular
+                        ? "bg-gradient-to-r from-brand-purple-600 to-brand-pink-600 text-white shadow-lg shadow-brand-purple-500/25 hover:shadow-xl hover:shadow-brand-purple-500/40"
+                        : "bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700",
+                    )}
+                  >
+                    {plan.cta}
+                  </button>
+                )}
 
                 {/* Features */}
                 <div className="space-y-3">

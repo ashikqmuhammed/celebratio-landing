@@ -127,7 +127,10 @@ export function HeroSection() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              <button
+              <a
+                href="https://chat.whatsapp.com/LyD4IUi9SM7AvKdNWx17Bz"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={cn(
                   "px-8 py-4 rounded-xl font-semibold text-base md:text-lg",
                   "bg-gradient-to-r from-brand-purple-600 via-brand-pink-600 to-brand-orange-500",
@@ -135,10 +138,11 @@ export function HeroSection() {
                   "hover:shadow-xl transition-all duration-300",
                   "hover:scale-105 active:scale-95",
                   "shadow-lg",
+                  "inline-block text-center",
                 )}
               >
-                Start Free
-              </button>
+                Join Waitlist
+              </a>
 
               <button
                 className={cn(

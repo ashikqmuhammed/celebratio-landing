@@ -56,7 +56,10 @@ export function CTASection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button
+            <a
+              href="https://chat.whatsapp.com/LyD4IUi9SM7AvKdNWx17Bz"
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn(
                 "px-8 py-4 rounded-xl font-semibold text-base md:text-lg",
                 "bg-white text-brand-purple-600",
@@ -65,10 +68,11 @@ export function CTASection() {
                 "transition-all duration-300",
                 "hover:scale-105 active:scale-95",
                 "w-full sm:w-auto",
+                "inline-block text-center",
               )}
             >
-              Start Free Trial
-            </button>
+              Join Waitlist
+            </a>
             <button
               className={cn(
                 "px-8 py-4 rounded-xl font-semibold text-base md:text-lg",
