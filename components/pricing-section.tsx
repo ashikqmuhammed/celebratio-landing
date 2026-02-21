@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const plans = [
   {
     name: "Starter",
-    price: "29",
+    price: "499",
     description: "Perfect for small businesses getting started",
     features: [
       "Up to 1,000 contacts",
@@ -20,7 +20,7 @@ const plans = [
   },
   {
     name: "Professional",
-    price: "79",
+    price: "799",
     description: "For growing businesses that need more power",
     features: [
       "Up to 10,000 contacts",
@@ -35,7 +35,7 @@ const plans = [
   },
   {
     name: "Enterprise",
-    price: "199",
+    price: "1999",
     description: "For large teams with advanced needs",
     features: [
       "Unlimited contacts",
