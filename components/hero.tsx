@@ -129,15 +129,21 @@ export function Hero() {
             className="pt-8 md:pt-12"
           >
             <p className="text-sm text-gray-500 dark:text-gray-500 mb-4">
-              Trusted by 10,000+ businesses worldwide
+              Trusted by 50+ businesses in India
             </p>
             <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 opacity-60">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <div
-                  key={i}
-                  className="h-8 w-24 bg-gray-300 dark:bg-gray-700 rounded animate-pulse"
-                />
-              ))}
+              <div className="text-gray-600 dark:text-gray-400 font-semibold text-lg">
+                WedMeGood
+              </div>
+              <div className="text-gray-600 dark:text-gray-400 font-semibold text-lg">
+                WeddingBazaar
+              </div>
+              <div className="text-gray-600 dark:text-gray-400 font-semibold text-lg">
+                ShaadiDukaan
+              </div>
+              <div className="text-gray-600 dark:text-gray-400 font-semibold text-lg">
+                EventFAQs
+              </div>
             </div>
           </motion.div>
         </div>
